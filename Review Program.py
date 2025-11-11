@@ -1,28 +1,27 @@
 print('Welcome to the programming world!'.center(50, '='))
 
-ocupation = ''
+occupation = ''
 
 name = str(input('Type your name: ')).strip()
 age = int(input('Type your age: '))
 
 while True:
-    print('''Ocupation in programming world:
-          [1] Begninner (Student)
+    print('''Occupation in programming world:
+          [1] Beginner (Student)
           [2] Freelancer (Worker)
           [3] Employee''')
-    option = int(input('Type the number corresponding to your ocupation: '))
+    option = int(input('Type the number corresponding to your occupation: '))
     if option in [1, 2, 3]:
         break
     else:
         print('Invalid option! Please try again.')
 
 if option == 1:
-    ocupation = 'Begninner (Student)'
+    occupation = 'Beginner (Student)'
 elif option == 2:
-    ocupation = 'Freelancer (Worker)'
+    occupation = 'Freelancer (Worker)'
 elif option == 3:
-    ocupation = 'Employee'
-
+    occupation = 'Employee'
 print(f'Hello, {name}. You are {age} years old.')
-print(f'You are a programmer, and your ocupation now is {ocupation}.')
+print(f'You are a programmer, and your occupation now is {occupation}.')
 print('Nice to meet you!'.center(50, '='))
